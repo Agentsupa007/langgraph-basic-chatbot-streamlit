@@ -20,7 +20,7 @@ def chat_node(state:ChatState):
 
     response = llm.invoke(messages)
     
-    return {"messages": [response.content]}
+    return {"messages": [response]}
 
 graph = StateGraph(ChatState)
 
